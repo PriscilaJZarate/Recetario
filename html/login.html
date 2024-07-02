@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores Compartidos Iniciar Sesión</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+</head>
+<body style="background-image: url('../img/collage-of-fast-food-products-photo.jpg');  background-repeat: repeat; ">
+
+   <div class="formulario-login">
+      <form id="formulario"> 
+         <a href="../index.html" style="text-decoration: none; color: black;">
+            <h1 style="padding-top: 0%; padding-bottom: 3%;"><img src="../img/favicon.ico" alt="logo" style="height: 35px;">  Sabores Compartidos</h1>
+         </a>
+         <div class="usuario-login">
+
+            <div class="espacio">  
+               <label for="usuario" style="width: 150px;">Usuario: </label>
+               <input type="text" name="usuario" id="usuario" class="input" >
+            </div>
+            <div class="error" id="error-usuario"></div>
+            <div class="espacio">
+               <label for="password" style="width: 150px;">Contraseña: </label>
+               <input type="password" name="password" id="password" class="input">
+            </div>
+            <div class="error" id="error-password"></div>
+            <div class="boton_registrarse">
+               <input type="submit" value="Iniciar sesión" class="button-submit">
+            </div>
+            <div><p>¿No tienes una cuenta? <a href="registro.html" style="text-decoration: underline; color: blue;">Creá una</a></p></div>
+
+         </div>
+      </form>
+   </div>
+
+   <script src="../js/login.js"></script>
+</body>
+</html>

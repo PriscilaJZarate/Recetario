@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores Compartidos</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        
+        <h1><img src="../img/favicon.ico" alt="logo" style="height: 35px;"> Sabores Compartidos</h1> 
+        <div class="menu">
+            <img src="img/menu-button_icon-icons.com_72989.png" alt="icono menu" style="height: 20px; ">
+            <a href="#inicio"><div class="opcion">Inicio</div></a>
+            <a href="html/tendencias.html"><div class="opcion" id="opcion2">Tendencias</div></a>
+            <a href="html/registro.html"><div class="opcion" id="opcion3">Registrarse</div></a>
+            <a href="html/login.html"><div class="opcion" id="opcion4">Iniciar sesión</div></a>
+        </div>
+        <div class="menu-items">
+            <a href="../index.html"><div class="opcion">Inicio</div></a>
+            <a href="agregar_rec.html"><div class="opcion">Recetario</div></a>
+            <a href="tendencias.html"><div class="opcion">Tendencias</div></a>
+            <a href="registro.html"><div class="opcion">Registrarse</div></a>
+            <a href="login.html"><div class="opcion">Iniciar sesión</div></a>
+        </div>
+          
+    </header>
+
+    <main> 
+        <section id="form" class="content">
+            <h2 class="search-title">Recetario</h2>
+            <p class="description" >En esta sección podrás guardar todas tu recetas favoritas</p>
+            <form action="#"  id="form-receta">
+                <div class="d-flex">
+                    <div class="form-control d-flex-column">
+                        <label for="title">Nombre</label>
+                        <input type="text" class="input-search" name="title" id="title">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="ingredientes">Ingredientes</label>
+                        <input type="text" class="input-search" name="ingredientes" id="ingredientes">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="procedimiento">Procedimiento</label>
+                        <input type="text" class="input-search" name="procedimiento" id="procedimiento">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="banner">Resultado</label>
+                        <input type="url" class="input-search" name="banner" id="banner-form">
+                    </div>                
+                    <input type="hidden"  name="id" id="id-receta">
+                    <button class="btn-save-receta" type="button" id="btn-save-receta">Agregar</button>
+                </div>
+            </form> 
+        </section>
+        <section id="list" class="container">
+            <h3 class="subtitle">Recetas subidas</h3>
+            <table id="list-table-recetas" class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Ingredientes</th>
+                        <th>Procedimiento</th>
+                        <th>Resultado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+               <tbody id="tbody-table-recetas">
+                    
+                </tbody>
+
+            </table>
+        </section>  
+    </main>
+
+    <footer>
+        <div class="marca">© 1996-2024 SaboresCompartidos.com</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/agregar-rec-fetch.js"></script>
+
+</body>
+</html>
